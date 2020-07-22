@@ -28,7 +28,7 @@ def win(current_game):
     diags = []
     for ix in range(len(game)):
         diags.append(game[ix][ix])
-   if all_same(diags): 
+    if all_same(diags): 
         print(f"player {diags[0]} is the winner horizontally(\\)!")
         return True
 
@@ -88,8 +88,8 @@ while play:
         if win(game):
             game_won = True
             again = input("The game is over, would you like to play again? (y/n ")
-            if again.lower()=="y"
-            print("restarting")
+            if again.lower()=="y":
+                print("restarting")
             elif again.lower() =="n":
                 print("Bye!!!")
                 play = False

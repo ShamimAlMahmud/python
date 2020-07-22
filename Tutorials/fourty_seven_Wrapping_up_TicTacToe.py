@@ -1,3 +1,4 @@
+import itertools
 def win(current_game):
     #Horizontal
     for row in game:
